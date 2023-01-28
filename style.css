@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  height: 500px;
+  width: 100%;
+  transform: scaleY(-1);
+  transition: 2s all ease;
+}
+.complexity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
