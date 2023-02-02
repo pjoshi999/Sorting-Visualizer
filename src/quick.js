@@ -17,13 +17,13 @@ async function partition(ele, low, high) {
       }
       await wait(delay);
     } else {
-      ele[j].style.background = "pink";
+      ele[j].style.background = "deeppink";
     }
   }
   i++;
   await wait(delay);
   swap(ele[i], ele[high]);
-  ele[high].style.background = "pink";
+  ele[high].style.background = "deeppink";
   ele[i].style.background = "rgb(5, 184, 10)";
   await wait(delay);
 
@@ -51,7 +51,6 @@ async function quick(ele, low, high) {
 
 const quickSortBtn = document.querySelector(".quick");
 quickSortBtn.addEventListener("click", async function () {
-  
   // Time and Space complexity
   const timeComplexity = document.querySelector("#time-complexity");
   timeComplexity.innerHTML = "<h4>T.C:</h4>";
